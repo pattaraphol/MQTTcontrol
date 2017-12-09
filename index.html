@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	
+	<script src="js/mqttws31.js" type="text/javascript"></script>
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<style>
+	body {
+	font-family: Helvetica;
+	font-size: 20px;
+	}
+	</style>
+</head>
+<body>
+
+<script src="app.js"></script>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h3>ระบบควบคุมความชื้น <small>(Manual)</small></h3>
+			<h4 class="text-muted">เชื่อมต่อ MQTT : <span id="ConnectMqtt"></span></h4>
+			<hr>
+			<img class="img-resbonsive" src="images/humidifier.png" width="250px;" alt=""><br><br>
+			<div class="text-muted">สถานะการทำงาน : <span id="status"></span></div><br>
+			<button id="btn-on" class="btn btn-default">Turn On</button>
+			<button id="btn-off" class="btn btn-default">Turn Off</button>
+		</div>
+	</div>
+</div>
+
+<script src="bootstrap/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>
